@@ -107,7 +107,8 @@ namespace GetCodeTool
             notificationLabel.ForeColor = textColor;
 
             int margin = 10;
-            notificationLabel.Location = new Point(margin, margin); // Top-left corner with margin
+            // Position at bottom-left corner with margin
+            notificationLabel.Location = new Point(margin, this.ClientSize.Height - notificationLabel.Height - margin);
 
             notificationLabel.Visible = true;
             notificationLabel.BringToFront();
